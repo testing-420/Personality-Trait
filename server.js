@@ -117,6 +117,11 @@ const server = http.createServer((req, res) => {
 });
 
 // Starting the server
-server.listen(4000, () => {
-  console.log('Server running on port 4000');
+const port = process.env.PORT || 4000;
+server.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
+
+// server.listen(4000, () => {
+//   console.log('Server running on port 4000');
+// });
