@@ -7,9 +7,9 @@ const path = require('path');
 
 // Building MySQL connection
 const db = mysql.createConnection({
-  host: 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
-  user: '2DS2GQCmgJ9gj7u.root',
-  password: '87HZI6bdWSCoMJEQ',
+  host: 'gateway01.ap-soust-1.prod.aws.tidbcloud.com',
+  user: '2DS2GQCm9gj7u.root',
+  password: '87HZI6bdoMJEQ',
   database: 'student',
   ssl: {
     ca: fs.readFileSync(path.join(__dirname, 'ca_certificate.pem')),  // Path to the CA certificate
